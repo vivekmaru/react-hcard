@@ -1,0 +1,54 @@
+@media screen and (min-width: 480px) {
+  form p>label {
+    flex: 1 1 50%;
+    width: 50%;
+  }
+  .hcardBuilder,
+  .hcardPreviewContainer {
+    width: 100%;
+    flex: 1 1 50%;
+  }
+  input[type='text'] {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hcardBuilder,
+  .hcardPreviewContainer {
+    min-height: 100vh;
+  }
+  .hcardDetails {
+    p {
+      &.displayInline {
+        display: inline-block;
+        width: 50%;
+      }
+      &>span {
+        display: inline-block;
+        &.empty {
+          display: inline-block;
+        }
+      }
+    }
+  }
+  .hcardPreview {
+    position: relative;
+    top: 10%;
+    &>header {
+      text-align: right;
+      height: 120px;
+      h2 {
+        height: 0;
+        text-align: left;
+        top: 60px;
+      }
+      img {
+        top: 30px;
+      }
+    }
+  }
+  input[type='text'] {
+    font-size: 1.1rem;
+  }
+}

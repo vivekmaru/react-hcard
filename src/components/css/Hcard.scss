@@ -1,0 +1,63 @@
+.hcardPreviewContainer {
+  background-color: #E7E9EC;
+}
+
+.hcardPreview {
+  margin: 0 auto;
+  border-bottom: 2px solid #aaaaaa;
+  &>header {
+    height: 140px;
+    background-color: #394F63;
+    color: #FFF;
+    width: 100%;
+    text-align: center;
+    padding: 0 2rem;
+  }
+  h3 {
+    text-align: right;
+    color: #bbc2c5;
+  }
+  h2 {
+    top: 10px;
+    position: relative;
+  }
+  img {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 20px;
+  }
+}
+
+.hcardDetails {
+  background-color: #FFF;
+  padding: 1.5em;
+  p {
+    border-bottom: 1px solid #dbe0e2;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    span {
+      display: block;
+      &.detailHeading {
+        width: 120px;
+        font-size: 0.8em;
+        .empty {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.detailHeading {
+  display: inline-block;
+  width: 80px;
+}
+
+//Add comma after suburb
+.suburb:empty + .comma:before {
+  content: "";
+}
+.comma:before {
+  content: ", ";
+}
